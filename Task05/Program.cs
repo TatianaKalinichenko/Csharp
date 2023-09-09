@@ -7,13 +7,21 @@
 
 Console.WriteLine("Введите натуральное число");
 int N = Convert.ToInt32(Console.ReadLine());
-// for(int i = -N; i <= N; i++)
-// {
-//     Console.Write($"{i} ");
-// }
-int count = -N;
-while (count <=N)
+
+if (N > 0)
 {
-    Console.Write($"{count} ");
-    count++;
+    // for(int i = -N; i <= N; i++)
+    // {
+    //     Console.Write($"{i} ");
+    // }
+    int count = -N;
+    while (count <= N)
+    {
+        Console.Write($"{count} ");
+        count++;
+    }
+}
+else
+{
+    Console.WriteLine("Введенное число не является натуральным");
 }
